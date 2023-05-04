@@ -8,7 +8,7 @@ public class HomePage extends SeleniumBase {
 
     public HomePage(WebDriver driver) {
         super(driver);
-
+    }
         By btnTrenes = By.linkText("Trenes");
         By btnVuelos = By.xpath("\"//div[@class='d-1ytebqy e10w470p3']//a[.='Vuelos']\"");
         By btnHotel = By.xpath("\"//div[@class='d-1ytebqy e10w470p3']//a[.='Hoteles']\"");
@@ -23,8 +23,15 @@ public class HomePage extends SeleniumBase {
         By addBebes = By.xpath(" //li[.='Bebé, 0-11 meses']");
         By btnBusqueda = By.xpath("//button[@class='d-1jmk4ql']");
 
+        //Funciones
+
+        public void SeleccionarOpcionTrenes (){
+            clickear(btnTrenes);
+        }
+
+
 
 
 
     }
-}
+
