@@ -17,5 +17,6 @@ public class PageHotel extends SeleniumBase {
         By btnEstrllas = By.xpath("//div[@id='Pill-StarsContainer']");
         By btnAplicar = By.xpath("//div[@class='sc-eZYOHW khSA-dJ']");
 
+
     }
 }

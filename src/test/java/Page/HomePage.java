@@ -22,11 +22,17 @@ public class HomePage extends SeleniumBase {
         By addNinios = By.xpath("//li[.='6 años']");
         By addBebes = By.xpath(" //li[.='Bebé, 0-11 meses']");
         By btnBusqueda = By.xpath("//button[@class='d-1jmk4ql']");
+        By btnAceptarTodo = By.xpath("//button[@class='iubenda-cs-accept-btn iubenda-cs-btn-primary']");
 
         //Funciones
 
         public void SeleccionarOpcionTrenes (){
             clickear(btnTrenes);
+            espera();
+        }
+
+        public void ApretarbtnAceptartodo(){
+            clickear(btnAceptarTodo);
         }
 
 
