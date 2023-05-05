@@ -10,22 +10,19 @@ public class HomePage extends SeleniumBase {
         super(driver);
     }
         By btnTrenes = By.linkText("Trenes");
-        By btnVuelos = By.xpath("\"//div[@class='d-1ytebqy e10w470p3']//a[.='Vuelos']\"");
         By btnHotel = By.xpath("\"//div[@class='d-1ytebqy e10w470p3']//a[.='Hoteles']\"");
-        By btnIdayVuelta = By.xpath("//div[@class='d-vfn33k']");
-        By Origen = By.xpath("//input[@class='d-1o7da3w ed5mks91']");
-        By Destino = By.xpath("//fieldset[@class='d-1kq2bom']/div[3]//input[@class='d-1o7da3w ed5mks91']");
+        By Origen = By.xpath("//*[@id=\':Riqed6lalallbla2m:\']");
+        By Destino = By.xpath("//*[@id=\':Rjaed6lalallbla2m:\']");
         By btnFechaIda = By.xpath("//label[.='Fecha de ida']");
-        By btnFechaVuelta = By.xpath("//label[.='Fecha de vuelta']");
-        By numeroDePasajeros = By.xpath("//label[.='Pasajero']");
-        By addAdultos = By.xpath("//label[.='Pasajero']");
-        By addNinios = By.xpath("//li[.='6 años']");
-        By addBebes = By.xpath(" //li[.='Bebé, 0-11 meses']");
+        By numeroIda = By.xpath("//button[@class='d-1z9ad3']");
         By btnBusqueda = By.xpath("//button[@class='d-1jmk4ql']");
+        By btnSoloIda = By.xpath("//div[contains(text(),'Solo ida')]");
+
         By btnAceptarTodo = By.xpath("//button[@class='iubenda-cs-accept-btn iubenda-cs-btn-primary']");
 
         //Funciones
 
+    //////////////////T////////////////////////////
         public void SeleccionarOpcionTrenes (){
             clickear(btnTrenes);
             espera();
@@ -33,6 +30,33 @@ public class HomePage extends SeleniumBase {
 
         public void ApretarbtnAceptartodo(){
             clickear(btnAceptarTodo);
+        }
+        //////////////////V////////////////////////////
+
+        public void ColocarOrigen (){
+            escribir("Madrid (MAD) - Adolfo Suárez Barajas, España",Origen);
+            clickear(Origen);
+        }
+
+        public void ColocarDestino (){
+            escribir("Barcelona (BCN) - Todos los aeropuertos, España",Destino);
+            clickear(Destino);
+        }
+
+        public void ColocarFechaIda(){
+            clickear(btnFechaIda);
+            clickear(numeroIda);
+
+        }
+
+        public void ApretarBotonBusqueda(){
+          clickear(btnBusqueda);
+        }
+
+        public void ApretarbtnIda(){
+            espera();
+            clickear(btnSoloIda);
+            espera();
         }
 
 
