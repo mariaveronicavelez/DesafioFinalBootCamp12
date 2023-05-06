@@ -8,8 +8,8 @@ public class PagePasajes extends SeleniumBase {
     public PagePasajes(WebDriver driver) {
         super(driver);
     }
-    By btnmasbarato = By.className("Tabs__ListElement-cncr__sc-61rlvo-1 iPjVHz");
-    By btnmasrapido = By.className("Tabs__ListElement-cncr__sc-61rlvo-1 ezUVfc");
+    By btnmasbarato = By.xpath("//*[@id=\'top-listing-container\']/div[10]/div/ul/li[3]");
+    By btnmasrapido = By.xpath("//*[@id=\'top-listing-container\']/div[10]/div/ul/li[2]");
     By pasaje = By.className("FullTripCard__SelectedPriceContainer-sc-z8znd4-4 cbaIot");
 
     //Funciones

@@ -12,15 +12,17 @@ public class PageTrenes extends SeleniumBase {
         By btnIdayVuelta = By.xpath("//div[contains(text(),'Ida y vuelta')]");
         By Origen = By.xpath("//input[@id=':Rmhl6lalaqlql2m:']");
         By Destino = By.xpath("//input[@id=':Rqhl6lalaqlql2m:']");
-        By FechadeIda = By.xpath("//label[contains(text(),'Fecha de ida')]");
+        By FechadeIda = By.cssSelector("button.d-ccz9o3");
         By numeroida = By.xpath("//div[@class='d-mog2ng']/div[2]//button[.='10']");
         By numerovuelta =By.xpath("//button[@class='d-1dj49va']");
-        By FechadeVuelta = By.xpath("//label[contains(text(),'Fecha de vuelta')]");
+        By FechadeVuelta = By.xpath("[aria-label='Fecha de vuelta']");
         By Pasajero = By.xpath("//label[contains(text(),'Pasajero')]");
         By btnBuscar = By.xpath("//button[@class='d-1jmk4ql']");
         By fechaidamal = By.xpath("//div[@class='d-mog2ng']/div[2]//button[.='17']");
         By madrid = By.xpath("//ul[@class='d-1wtoxx4']/li[.='Madrid']");
-        By albacete = By.cssSelector("[data-option-index='2']");
+        By albacete = By.cssSelector("[data-option-index='0'] span");
+        By fechaidax2= By.xpath("//label[contains(text(),'Fecha de ida')]");
+        By fechavueltax2 = By.xpath("//label[contains(text(),'Fecha de vuelta')]");
 
         //Funciones
 
@@ -36,7 +38,6 @@ public class PageTrenes extends SeleniumBase {
             espera();
             clickear(Origen);
             escribir("Madrid",Origen);
-            scroll(madrid);
             clickear(madrid);
 
         }
@@ -44,22 +45,21 @@ public class PageTrenes extends SeleniumBase {
         public void seleccionardestino(){
             clickear(Destino);
             escribir("Albacete",Destino);
-            //clickear(albacete);
+            clickear(albacete);
 
         }
-
-
-
 
 
 
         public void seleccionarFechadeIda(){
-            clickear(FechadeIda);
+            dobleClick(fechaidax2);
+            espera();
             clickear(numeroida);
         }
 
         public void seleccionarFechaVuelta(){
-            clickear(FechadeVuelta);
+            dobleClick(fechavueltax2);
+            espera();
             clickear(numerovuelta);
         }
 

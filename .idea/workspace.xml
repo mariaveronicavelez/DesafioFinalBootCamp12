@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6a0be86b-e4a1-4cfa-a491-16a5366b3b69" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Page/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Page/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Base/SeleniumBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/SeleniumBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Page/PagePasajes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Page/PagePasajes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Page/PageTrenes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Page/PageTrenes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Page/PageVuelos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Page/PageVuelos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/TestdeTrenes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/TestdeTrenes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/TestdeVuelos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/TestdeVuelos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,30 +82,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.TestdeVuelos.testbusquedadeboletosida">
-    <configuration name="TestdeTrenes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;test.TestdeTrenes&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.TestdeTrenes.testbusquedadeboletosmasrapidos">
     <configuration name="TestdeTrenes.testbusquedadeboletosida" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -121,6 +97,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;test.TestdeTrenes.testbusquedadeboletosida&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestdeTrenes.testbusquedadeboletosidayvuelta" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;test.TestdeTrenes.testbusquedadeboletosidayvuelta&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -153,7 +152,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestdeVuelos" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestdeTrenes.testbusquedadeboletosmasrapidos" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -166,7 +165,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;test.TestdeVuelos&quot;" />
+            <option value="&quot;test.TestdeTrenes.testbusquedadeboletosmasrapidos&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -201,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TestdeVuelos.testbusquedadeboletosida" />
-        <item itemvalue="Gradle.TestdeVuelos" />
-        <item itemvalue="Gradle.TestdeTrenes.testbusquedadeboletosida" />
+        <item itemvalue="Gradle.TestdeTrenes.testbusquedadeboletosmasrapidos" />
         <item itemvalue="Gradle.TestdeTrenes.testbusquedadeboletosmasbaratos" />
-        <item itemvalue="Gradle.TestdeTrenes" />
+        <item itemvalue="Gradle.TestdeTrenes.testbusquedadeboletosidayvuelta" />
+        <item itemvalue="Gradle.TestdeTrenes.testbusquedadeboletosida" />
+        <item itemvalue="Gradle.TestdeVuelos.testbusquedadeboletosida" />
       </list>
     </recent_temporary>
   </component>
