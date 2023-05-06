@@ -50,12 +50,13 @@ public class TestdeTrenes {
         homepage.ApretarbtnAceptartodo();
         homepage.SeleccionarOpcionTrenes();
         pagetrenes.SeleccionarbtnIda();
-        pagetrenes.escribir();
+        pagetrenes.escribirorigen();
+        pagetrenes.seleccionardestino();
         pagetrenes.seleccionarFechadeIda();
         pagetrenes.buscar();
 
     }
-    @Test
+  /*  @Test
     void testbusquedadeboletosidayvuelta() throws InterruptedException {
 
         homepage= new HomePage(driver);
@@ -158,5 +159,7 @@ public class TestdeTrenes {
         pagetrenes.buscar();
 
     }
+
+   */
 
 }

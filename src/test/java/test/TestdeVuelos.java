@@ -33,7 +33,7 @@ public class TestdeVuelos {
 
     @AfterEach
     void teardown() throws InterruptedException {
-        // driver.quit();
+        driver.quit();
     }
 
     @Test
@@ -48,6 +48,7 @@ public class TestdeVuelos {
         homepage.ColocarDestino();
         homepage.ColocarFechaIda();
         homepage.ApretarBotonBusqueda();
+        pageVuelos.presionarVueloSinEscalas();
     }
 
     @Test
@@ -73,6 +74,7 @@ public class TestdeVuelos {
         homepage.ApretarbtnAceptartodo();
         homepage.ApretarbtnIda();
         homepage.ApretarBotonBusqueda();
+        homepage.seVisualizaElError();
     }
 
     @Test
@@ -87,6 +89,7 @@ public class TestdeVuelos {
         homepage.ColocarDestino();
         homepage.ColocarFechaIda();
         homepage.ApretarBotonBusqueda();
+
     }
     @Test
     void testbusquedadeboletomasbaratos() throws InterruptedException {
