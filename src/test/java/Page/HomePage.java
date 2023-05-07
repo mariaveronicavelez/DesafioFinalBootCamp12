@@ -10,7 +10,7 @@ public class HomePage extends SeleniumBase {
         super(driver);
     }
         By btnTrenes = By.linkText("Trenes");
-        By btnHotel = By.xpath("\"//div[@class='d-1ytebqy e10w470p3']//a[.='Hoteles']\"");
+        By btnHoteles = By.xpath("\"//div[@class='d-1ytebqy e10w470p3']//a[.='Hoteles']\"");
         By Origen = By.xpath("//*[@id=\':Riqed6lalallbla2m:\']");
         By Destino = By.xpath("//*[@id=\':Rjaed6lalallbla2m:\']");
         By btnFechaIda = By.xpath("//label[.='Fecha de ida']");
@@ -23,10 +23,6 @@ public class HomePage extends SeleniumBase {
         //Funciones
 
     //////////////////T////////////////////////////
-        public void SeleccionarOpcionTrenes (){
-            clickear(btnTrenes);
-            espera();
-        }
 
         public void ApretarbtnAceptartodo(){
             clickear(btnAceptarTodo);
@@ -59,7 +55,10 @@ public class HomePage extends SeleniumBase {
             espera();
         }
 
-
+       public void SeleccionarOpcionTrenes (){
+        clickear(btnTrenes);
+        espera();
+        }
 
 
 

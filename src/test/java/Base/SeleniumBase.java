@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import static org.junit.jupiter.api.Assertions.*;
+
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -129,6 +131,14 @@ public class SeleniumBase {
         WebElement elemento = driver.findElement(localizador);
         js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView(true);", elemento);
+
+    }
+    public void teclear(By localizador, String text){
+        driver.findElement(localizador).sendKeys(text);
+    }
+
+    public void validacionText(By localizador, String text){
+        assertEquals(text, driver.findElement(localizador).getText());
 
     }
 }
