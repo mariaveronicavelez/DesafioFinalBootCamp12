@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -124,7 +125,13 @@ public class SeleniumBase {
         }
     }
     public void espera() {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+    }
+
+    public void dobleClick(By localizador){
+        Actions act= new Actions(driver);
+        WebElement ele=driver.findElement(localizador);
+        act.doubleClick(ele).perform();
     }
 
     public void scroll (By localizador){

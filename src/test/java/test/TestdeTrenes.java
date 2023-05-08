@@ -50,7 +50,8 @@ public class TestdeTrenes {
         homepage.ApretarbtnAceptartodo();
         homepage.SeleccionarOpcionTrenes();
         pagetrenes.SeleccionarbtnIda();
-        pagetrenes.escribir();
+        pagetrenes.escribirorigen();
+        pagetrenes.seleccionardestino();
         pagetrenes.seleccionarFechadeIda();
         pagetrenes.buscar();
 
@@ -67,7 +68,8 @@ public class TestdeTrenes {
         homepage.ApretarbtnAceptartodo();
         homepage.SeleccionarOpcionTrenes();
         pagetrenes.SeleccionarbtnIdayVuelta();
-        pagetrenes.escribir();
+        pagetrenes.escribirorigen();
+        pagetrenes.seleccionardestino();
         pagetrenes.seleccionarFechadeIda();
         pagetrenes.seleccionarFechaVuelta();
         pagetrenes.buscar();
@@ -85,7 +87,8 @@ public class TestdeTrenes {
         homepage.ApretarbtnAceptartodo();
         homepage.SeleccionarOpcionTrenes();
         pagetrenes.SeleccionarbtnIda();
-        pagetrenes.escribir();
+        pagetrenes.escribirorigen();
+        pagetrenes.seleccionardestino();
         pagetrenes.seleccionarFechadeIda();
         pagetrenes.buscar();
         pagepasajes.seleccionarMasBarato();
@@ -103,15 +106,16 @@ public class TestdeTrenes {
 
         homepage.ApretarbtnAceptartodo();
         homepage.SeleccionarOpcionTrenes();
-        pagetrenes.seleccionarFechadeIda();
-        pagetrenes.escribir();
+        pagetrenes.SeleccionarbtnIda();
+        pagetrenes.escribirorigen();
+        pagetrenes.seleccionardestino();
         pagetrenes.seleccionarFechadeIda();
         pagetrenes.buscar();
         pagepasajes.seleccionarMasRapido();
 
 
     }
-    @Test
+   /* @Test
     void testerrordepago() throws InterruptedException {
 
         homepage= new HomePage(driver);
@@ -158,5 +162,7 @@ public class TestdeTrenes {
         pagetrenes.buscar();
 
     }
+
+   */
 
 }

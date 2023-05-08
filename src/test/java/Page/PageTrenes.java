@@ -12,13 +12,17 @@ public class PageTrenes extends SeleniumBase {
         By btnIdayVuelta = By.xpath("//div[contains(text(),'Ida y vuelta')]");
         By Origen = By.xpath("//input[@id=':Rmhl6lalaqlql2m:']");
         By Destino = By.xpath("//input[@id=':Rqhl6lalaqlql2m:']");
-        By FechadeIda = By.className("//label[contains(text(),'Fecha de ida')]");
-        By numeroida = By.className("//button[contains (text (), '13')]");
-        By numerovuelta = By.className("d-1dj49va");
-        By FechadeVuelta = By.className("d-15np3tn ed5mks92");
-        By Pasajero = By.className("d-1rd1vwn");
-        By btnBuscar = By.className("//button[@class='d-1jmk4ql']");
-        By fechaidamal = By.xpath("//button[@class='d-1z9ad3']");
+        By FechadeIda = By.cssSelector("button.d-ccz9o3");
+        By numeroida = By.xpath("//div[@class='d-mog2ng']/div[2]//button[.='10']");
+        By numerovuelta =By.xpath("//button[@class='d-1dj49va']");
+        By FechadeVuelta = By.xpath("[aria-label='Fecha de vuelta']");
+        By Pasajero = By.xpath("//label[contains(text(),'Pasajero')]");
+        By btnBuscar = By.xpath("//button[@class='d-1jmk4ql']");
+        By fechaidamal = By.xpath("//div[@class='d-mog2ng']/div[2]//button[.='17']");
+        By madrid = By.xpath("//ul[@class='d-1wtoxx4']/li[.='Madrid']");
+        By albacete = By.cssSelector("[data-option-index='0'] span");
+        By fechaidax2= By.xpath("//label[contains(text(),'Fecha de ida')]");
+        By fechavueltax2 = By.xpath("//label[contains(text(),'Fecha de vuelta')]");
 
         //Funciones
 
@@ -30,24 +34,32 @@ public class PageTrenes extends SeleniumBase {
             clickear(btnIdayVuelta);
         }
 
-        public void escribir() {
+        public void escribirorigen() {
             espera();
             clickear(Origen);
-            escribir("Barcelona",Origen);
-            escribir("Cordoba",Destino);
+            escribir("Madrid",Origen);
+            clickear(madrid);
 
         }
 
+        public void seleccionardestino(){
+            clickear(Destino);
+            escribir("Albacete",Destino);
+            clickear(albacete);
+
+        }
 
 
 
         public void seleccionarFechadeIda(){
-            clickear(FechadeIda);
+            dobleClick(fechaidax2);
+            espera();
             clickear(numeroida);
         }
 
         public void seleccionarFechaVuelta(){
-            clickear(FechadeVuelta);
+            dobleClick(fechavueltax2);
+            espera();
             clickear(numerovuelta);
         }
 
